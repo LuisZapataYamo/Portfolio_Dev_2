@@ -1,0 +1,63 @@
+{
+  "home": {
+    "hello": {
+      "en": "Hi, I'm"
+    },
+    "description": {
+      "en": "I am a front-end developer, back-end developer and soon to be data scientist."
+    },
+    "enjoy": {
+      "en": "Enjoy your trip!"
+    },
+    "download": {
+      "en": "Download CV"
+    }
+  },
+  "about": {
+    "title": {
+      "en": "About me"
+    },
+    "description": {
+      "en": "I am a systems engineering student and software developer with experience in combining technologies to create high-quality, high-performance applications. My focus is on utilizing my technical knowledge to design innovative solutions that provide an excellent user experience and improve efficiency."
+    },
+    "email": {
+      "en": "Email"
+    },
+    "place": {
+      "en": "Place"
+    }
+  },
+  "skills": {
+    "title": {
+      "en": "Skills"
+    },
+    "others": {
+      "en": "Others"
+    },
+    "skills": {
+      "en": "Skills/Tools"
+    }
+  },
+  "experience": {
+    "title": {
+      "en": "Experience"
+    },
+    "valhalla":
+      {
+        "enterprise": "Valhalla",
+        "link": "https://valhalla.com.pe/",
+        "subtitle": {
+          "en": "Back-End Developer / Technical Support"
+        },
+        "time": {
+          "en": "Sept. 2022 - present"
+        },
+        "description": {
+          "en": "Development and maintenance of the back-end of the Valhalla project. Technical support of websites using WordPress and Shopify."
+        },
+        "skills": {
+          "en": "Skills"
+        }
+      }
+  }
+}

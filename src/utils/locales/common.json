@@ -1,0 +1,32 @@
+{
+  "home": {
+    "es": "Inicio",
+    "en": "Home",
+    "fr": "Accueil"
+  },
+  "about": {
+    "es": "Sobre mí",
+    "en": "About Me",
+    "fr": "À propos de moi"
+  },
+  "skills": {
+    "es": "Habilidades",
+    "en": "Skills",
+    "fr": "Compétences"
+  },
+  "experience": {
+    "es": "Experiencia",
+    "en": "Experience",
+    "fr": "Expérience"
+  },
+  "blog": {
+    "es": "Blog",
+    "en": "Blog",
+    "fr": "Blog"
+  },
+  "learning": {
+    "es": "Aprendizaje",
+    "en": "Learning",
+    "fr": "Apprentissage"
+  }
+}
