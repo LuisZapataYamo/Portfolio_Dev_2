@@ -1,0 +1,64 @@
+div.main-container {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 8rem 23rem 0 23rem;
+    display: flex;
+    flex-direction: column;
+}
+
+div.main-container div.home {
+    height: calc(100vh - 8rem);
+    width: 100%;
+}
+
+div.main-container div.home div.content {
+    margin-top: 26.5rem;
+    width: 54.5rem;
+    margin-left: 5.7rem;
+}
+
+div.main-container div.home div.content span.hi {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+div.main-container div.home div.content div.name {
+    width: 47.1rem;
+    position: relative;
+}
+
+div.main-container div.home div.content div.name span.text {
+    display: inline-block;
+    width: fit-content;
+    font-size: 8rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--yellow);
+}
+
+div.main-container div.home div.content div.name svg.icon {
+    position: absolute;
+    top: 4rem;
+}
+
+div.main-container div.home div.content div.name svg.icon-left {
+    left: -5.3rem
+}
+
+div.main-container div.home div.content div.name svg.icon-right {
+    right: -5.3rem
+}
+
+div.main-container div.home div.content p {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+div.main-container div.home div.content p.enjoy {
+    margin-top: 3rem;
+}

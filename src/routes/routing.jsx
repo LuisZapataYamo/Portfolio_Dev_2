@@ -1,11 +1,15 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "../App.jsx";
+import Home from "../components/Home/Home.jsx";
 
 const Routing = () => {
     return (
         <BrowserRouter basename="/LuisZapataDev/">
             <Routes>
-                <Route index path='/' element={<App/>}/>
+                <Route element={<App />} >
+                    <Route index element={<Home />} />
+                </Route>
+
 
                 {/*<Route element={<BlogLayout/>}>*/}
                 {/*    <Route path='/blog/' element={<BlogHome/>}/>*/}

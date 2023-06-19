@@ -4,11 +4,11 @@
   padding: 0;
   font-size: 62.5%;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 
 :root {
-  font-family: 'Inter', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   --black: #2D2F2E;

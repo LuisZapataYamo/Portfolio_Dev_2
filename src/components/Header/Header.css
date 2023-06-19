@@ -6,6 +6,7 @@ header {
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid var(--white);
+    position: fixed;
 }
 
 header div.container {
@@ -21,7 +22,7 @@ header div.container svg.logo-icon {
 }
 
 header div.container nav.navbar {
-    width: 63.5rem;
+    width: 63.6rem;
     height: 100%;
 }
 
@@ -31,14 +32,15 @@ header div.container nav.navbar ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 3.6rem;
+    gap: 3.3rem;
 }
 
 header div.container nav.navbar ul li {
     width: auto;
     height: fit-content;
-    font-weight: 500;
-    font-size: 1.3rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
 }
 
 header div.container div.settings {
@@ -47,8 +49,11 @@ header div.container div.settings {
     display: flex;
 }
 
-header div.container svg.icon-theme {
+header div.container div.icon-theme {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header div.container span.language {

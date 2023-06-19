@@ -2,9 +2,11 @@ a.button-component div {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: inherit;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     border-radius: 0.8rem;
+}
+
+a.button-component div span {
+    line-height: 2.2rem;
 }
