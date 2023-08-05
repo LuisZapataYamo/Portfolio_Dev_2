@@ -1,3 +1,5 @@
+/*https://huemint.com/website-3/#palette=d9d9d9-00b5e5-2d2f2e-89d20c-183a3b-a397ec*/
+
 * {
   text-decoration: none;
   margin: 0;
@@ -13,8 +15,12 @@
   font-weight: 400;
   --black: #2D2F2E;
   --yellow: #FCF8A1;
+  --purple: #A397EC;
+  --green: #89D20C;
+  --blue: #00b5e5;
+  --black-hard: #183a3b;
   --white: #D9D9D9;
-  color-scheme: light dark;
+  color-scheme: dark;
   color: var(--white);
   font-synthesis: none;
   text-rendering: optimizeLegibility;

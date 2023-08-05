@@ -10,3 +10,13 @@ a.button-component div {
 a.button-component div span {
     line-height: 2.2rem;
 }
+
+a.button-component.dark div{
+    color: var(--black);
+    background-color: var(--yellow);
+}
+
+a.button-component.light div{
+    color: var(--black);
+    background-color: var(--purple);
+}

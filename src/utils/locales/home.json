@@ -1,63 +1,105 @@
 {
+  "header": {
+    "home": {
+      "EN": "Home",
+      "ES": "Inicio"
+    },
+    "about": {
+      "EN": "About",
+      "ES": "Sobre mí"
+    },
+    "skills": {
+      "EN": "Skills",
+      "ES": "Habilidades"
+    },
+    "experience": {
+      "EN": "Experience",
+      "ES": "Experiencia"
+    },
+    "blog": {
+      "EN": "Blog",
+      "ES": "Blog"
+    },
+    "learning": {
+      "EN": "Learning",
+      "ES": "Aprendizaje"
+    }
+  },
   "home": {
     "hello": {
-      "en": "Hi, I'm"
+      "EN": "Hi, I'm",
+      "ES": "Hola, soy"
     },
     "description": {
-      "en": "I am a front-end developer, back-end developer and soon to be data scientist."
+      "EN": "I am a front-end developer, back-end developer and soon to be data scientist.",
+      "ES": "Soy un desarrollador front-end, desarrollador back-end y pronto seré un científico de datos."
     },
     "enjoy": {
-      "en": "Enjoy your trip!"
+      "EN": "Enjoy your trip!",
+      "ES": "¡Disfruta tu viaje!"
     },
     "download": {
-      "en": "Download CV"
+      "EN": "Download CV",
+      "ES": "Descargar CV"
     }
   },
   "about": {
     "title": {
-      "en": "About me"
+      "EN": "About me",
+      "ES": "Sobre mí"
     },
     "description": {
-      "en": "I am a systems engineering student and software developer with experience in combining technologies to create high-quality, high-performance applications. My focus is on utilizing my technical knowledge to design innovative solutions that provide an excellent user experience and improve efficiency."
+      "EN": "I am a systems engineering student and software developer with experience in combining technologies to create high-quality, high-performance applications. My focus is on utilizing my technical knowledge to design innovative solutions that provide an excellent user experience and improve efficiency.",
+      "ES": "Soy un estudiante de ingeniería de sistemas y desarrollador de software con experiencia EN combinar tecnologías para crear aplicaciones de alta calidad y alto rendimiento. Mi enfoque está EN utilizar mis conocimientos técnicos para diseñar soluciones innovadoras que brinden una excelente experiencia de usuario y mejoren la eficiencia."
     },
     "email": {
-      "en": "Email"
+      "EN": "Email",
+      "ES": "Correo electrónico"
     },
     "place": {
-      "en": "Place"
+      "EN": "Place",
+      "ES": "Lugar"
     }
   },
   "skills": {
     "title": {
-      "en": "Skills"
+      "EN": "Skills",
+      "ES": "Habilidades"
     },
     "others": {
-      "en": "Others"
+      "EN": "Others",
+      "ES": "Otros"
     },
     "skills": {
-      "en": "Skills/Tools"
+      "EN": "Skills/Tools",
+      "ES": "Habilidades/Herramientas"
     }
   },
   "experience": {
     "title": {
-      "en": "Experience"
+      "EN": "Experience",
+      "ES": "Experiencia"
     },
-    "valhalla":
-      {
-        "enterprise": "Valhalla",
-        "link": "https://valhalla.com.pe/",
-        "subtitle": {
-          "en": "Back-End Developer / Technical Support"
-        },
-        "time": {
-          "en": "Sept. 2022 - present"
-        },
-        "description": {
-          "en": "Development and maintenance of the back-end of the Valhalla project. Technical support of websites using WordPress and Shopify."
-        },
-        "skills": {
-          "en": "Skills"
-        }
+    "valhalla": {
+      "enterprise": "Valhalla",
+      "link": "https://valhalla.com.pe/",
+      "subtitle": {
+        "EN": "Back-End Developer / Technical Support",
+        "ES": "Desarrollador Back-End / Soporte Técnico"
+      },
+      "time": {
+        "EN": "Sept. 2022 - present",
+        "ES": "Sept. 2022 - presente"
+      },
+      "description": {
+        "EN": "Development and maintenance of the back-end of the Valhalla project. Technical support of websites using WordPress and Shopify.",
+        "ES": "Desarrollo y mantenimiento del back-end del proyecto Valhalla. Soporte técnico de sitios web utilizando WordPress y Shopify."
+      },
+      "skills": {
+        "EN": "Skills",
+        "ES": "Habilidades"
       }
+    }
   }
 }
+

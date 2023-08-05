@@ -5,8 +5,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid var(--white);
     position: fixed;
+    z-index: 1;
+}
+
+header.dark {
+    border-bottom: 1px solid var(--white);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+header.light {
+    border-bottom: 1px solid var(--black);
+    background-color: var(--white);
+    color: var(--black);
 }
 
 header div.container {
@@ -20,6 +32,15 @@ header div.container {
 header div.container svg.logo-icon {
     width: 14.8rem;
 }
+
+header.dark div.container svg.logo-icon path:first-child {
+    fill: aqua;
+}
+
+header.light div.container svg.logo-icon > path {
+    fill: var(--black);
+}
+
 
 header div.container nav.navbar {
     width: 63.6rem;
@@ -43,6 +64,32 @@ header div.container nav.navbar ul li {
     text-align: center;
 }
 
+header.dark div.container nav.navbar ul li.inav::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--purple);
+    transition: width 1s;
+}
+
+header.dark div.container nav.navbar ul li.inav:hover::after {
+    width: 100%;
+}
+
+header.light div.container nav.navbar ul li.inav::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--black);
+    transition: width 1s;
+}
+
+header.light div.container nav.navbar ul li.inav:hover::after {
+    width: 100%;
+}
+
 header div.container div.settings {
     width: 7rem;
     align-items: center;
@@ -54,6 +101,15 @@ header div.container div.icon-theme {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+header.dark div.container div.icon-theme svg path {
+    fill: var(--yellow);
+}
+
+header.light div.container div.icon-theme svg path {
+    fill: var(--black);
 }
 
 header div.container span.language {
