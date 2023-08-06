@@ -1,104 +1,105 @@
 {
   "header": {
     "home": {
-      "en": "Home",
-      "es": "Inicio"
+      "EN": "Home",
+      "ES": "Inicio"
     },
     "about": {
-      "en": "About",
-      "es": "Sobre mí"
+      "EN": "About",
+      "ES": "Sobre mí"
     },
     "skills": {
-      "en": "Skills",
-      "es": "Habilidades"
+      "EN": "Skills",
+      "ES": "Habilidades"
     },
     "experience": {
-      "en": "Experience",
-      "es": "Experiencia"
+      "EN": "Experience",
+      "ES": "Experiencia"
     },
     "blog": {
-      "en": "Blog",
-      "es": "Blog"
+      "EN": "Blog",
+      "ES": "Blog"
     },
     "learning": {
-      "en": "Learning",
-      "es": "Aprendizaje"
+      "EN": "Learning",
+      "ES": "Aprendizaje"
     }
   },
   "home": {
     "hello": {
-      "en": "Hi, I'm",
-      "es": "Hola, soy"
+      "EN": "Hi, I'm",
+      "ES": "Hola, soy"
     },
     "description": {
-      "en": "I am a front-end developer, back-end developer and soon to be data scientist.",
-      "es": "Soy un desarrollador front-end, desarrollador back-end y pronto seré un científico de datos."
+      "EN": "I am a front-end developer, back-end developer and soon to be data scientist.",
+      "ES": "Soy un desarrollador front-end, desarrollador back-end y pronto seré un científico de datos."
     },
     "enjoy": {
-      "en": "Enjoy your trip!",
-      "es": "¡Disfruta tu viaje!"
+      "EN": "Enjoy your trip!",
+      "ES": "¡Disfruta tu viaje!"
     },
     "download": {
-      "en": "Download CV",
-      "es": "Descargar CV"
+      "EN": "Download CV",
+      "ES": "Descargar CV"
     }
   },
   "about": {
     "title": {
-      "en": "About me",
-      "es": "Sobre mí"
+      "EN": "About me",
+      "ES": "Sobre mí"
     },
     "description": {
-      "en": "I am a systems engineering student and software developer with experience in combining technologies to create high-quality, high-performance applications. My focus is on utilizing my technical knowledge to design innovative solutions that provide an excellent user experience and improve efficiency.",
-      "es": "Soy un estudiante de ingeniería de sistemas y desarrollador de software con experiencia en combinar tecnologías para crear aplicaciones de alta calidad y alto rendimiento. Mi enfoque está en utilizar mis conocimientos técnicos para diseñar soluciones innovadoras que brinden una excelente experiencia de usuario y mejoren la eficiencia."
+      "EN": "I am a systems engineering student and software developer with experience in combining technologies to create high-quality, high-performance applications. My focus is on utilizing my technical knowledge to design innovative solutions that provide an excellent user experience and improve efficiency.",
+      "ES": "Soy un estudiante de ingeniería de sistemas y desarrollador de software con experiencia EN combinar tecnologías para crear aplicaciones de alta calidad y alto rendimiento. Mi enfoque está EN utilizar mis conocimientos técnicos para diseñar soluciones innovadoras que brinden una excelente experiencia de usuario y mejoren la eficiencia."
     },
     "email": {
-      "en": "Email",
-      "es": "Correo electrónico"
+      "EN": "Email",
+      "ES": "Correo electrónico"
     },
     "place": {
-      "en": "Place",
-      "es": "Lugar"
+      "EN": "Place",
+      "ES": "Lugar"
     }
   },
   "skills": {
     "title": {
-      "en": "Skills",
-      "es": "Habilidades"
+      "EN": "Skills",
+      "ES": "Habilidades"
     },
     "others": {
-      "en": "Others",
-      "es": "Otros"
+      "EN": "Others",
+      "ES": "Otros"
     },
     "skills": {
-      "en": "Skills/Tools",
-      "es": "Habilidades/Herramientas"
+      "EN": "Skills/Tools",
+      "ES": "Habilidades/Herramientas"
     }
   },
   "experience": {
     "title": {
-      "en": "Experience",
-      "es": "Experiencia"
+      "EN": "Experience",
+      "ES": "Experiencia"
     },
     "valhalla": {
       "enterprise": "Valhalla",
       "link": "https://valhalla.com.pe/",
       "subtitle": {
-        "en": "Back-End Developer / Technical Support",
-        "es": "Desarrollador Back-End / Soporte Técnico"
+        "EN": "Back-End Developer / Technical Support",
+        "ES": "Desarrollador Back-End / Soporte Técnico"
       },
       "time": {
-        "en": "Sept. 2022 - present",
-        "es": "Sept. 2022 - presente"
+        "EN": "Sept. 2022 - present",
+        "ES": "Sept. 2022 - presente"
       },
       "description": {
-        "en": "Development and maintenance of the back-end of the Valhalla project. Technical support of websites using WordPress and Shopify.",
-        "es": "Desarrollo y mantenimiento del back-end del proyecto Valhalla. Soporte técnico de sitios web utilizando WordPress y Shopify."
+        "EN": "Development and maintenance of the back-end of the Valhalla project. Technical support of websites using WordPress and Shopify.",
+        "ES": "Desarrollo y mantenimiento del back-end del proyecto Valhalla. Soporte técnico de sitios web utilizando WordPress y Shopify."
       },
       "skills": {
-        "en": "Skills",
-        "es": "Habilidades"
+        "EN": "Skills",
+        "ES": "Habilidades"
       }
     }
   }
 }
+
