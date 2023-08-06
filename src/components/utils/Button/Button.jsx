@@ -13,12 +13,13 @@ const Button = ({
                     w = '0',
                     bgcolor = "var(--yellow)",
                     txcolor = "var(--black)",
-                    fsize = '1.5rem'
+                    fsize = '1.5rem',
+                    c = "",
                 }) => {
     const {theme, setTheme, language, setLanguage} = useContext(GlobalContext);
 
     return (
-        <Link to={to} className={`button-component ${theme}`}>
+        <Link to={to} className={`button-component ${theme} ${c}`}>
             <div style={{
                 paddingLeft: ph,
                 paddingRight: ph,

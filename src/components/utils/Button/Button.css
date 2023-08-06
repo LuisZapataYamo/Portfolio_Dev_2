@@ -7,16 +7,46 @@ a.button-component div {
     border-radius: 0.8rem;
 }
 
+a.button-component.dark div::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 2px;
+    background-color: aqua;
+    transition: width 1.5s;
+}
+
+a.button-component.dark.inav div:hover::after {
+    width: 100%;
+}
+
+a.button-component.light div::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 2px;
+    background-color: var(--black);
+    transition: width 1.5s;
+}
+
+a.button-component.light.inav div:hover::after {
+    width: 100%;
+}
+
 a.button-component div span {
     line-height: 2.2rem;
 }
 
-a.button-component.dark div{
+a.button-component.dark div {
     color: var(--black);
     background-color: var(--yellow);
 }
 
-a.button-component.light div{
+a.button-component.light div {
     color: var(--black);
     background-color: var(--purple);
 }
