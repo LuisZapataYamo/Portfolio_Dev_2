@@ -43,7 +43,7 @@ header.light div.container svg.logo-icon > path {
 
 
 header div.container nav.navbar {
-    width: 63.6rem;
+    min-width: 63.6rem;
     height: 100%;
 }
 
@@ -62,6 +62,7 @@ header div.container nav.navbar ul li {
     font-weight: 600;
     font-size: 1.4rem;
     text-align: center;
+    white-space: nowrap;
 }
 
 header.dark div.container nav.navbar ul li.inav::after {
