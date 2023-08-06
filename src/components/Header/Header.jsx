@@ -11,7 +11,7 @@ import commons from "../../utils/locales/common.json";
 
 const Header = () => {
     const {theme, setTheme, language, setLanguage} = useContext(GlobalContext);
-    let dataHeader = commons["header"]
+    const dataHeader = commons["header"]
 
     const handleThemeChange = () => {
         const varTheme = theme === 'dark' ? 'light' : 'dark'
@@ -24,8 +24,6 @@ const Header = () => {
     }
 
     useEffect(() => {
-        dataHeader = commons["header"]
-        console.log(dataHeader)
     }, [theme, language])
 
     return <header className={`header ${theme}`}>

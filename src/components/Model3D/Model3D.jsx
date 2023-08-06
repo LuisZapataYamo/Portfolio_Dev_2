@@ -8,9 +8,6 @@ import firefliesFragmentShader from "./fireflies/fireflies.glsl";
 import moonTexture2 from "../../assets/img/textures/moonr.jpg";
 import moonNormal from "../../assets/img/textures/moon_normalr.jpg";
 
-console.log(firefliesFragmentShader);
-console.log(firefliesVertexShader);
-
 const Model = () => {
     const ref = useRef();
     const moonTexture = useLoader(TextureLoader, moonTexture2);
