@@ -1,7 +1,13 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useContext, useEffect, useRef, useState} from 'react';
 import {useLoader, Canvas, useFrame, useThree} from '@react-three/fiber';
 import {TextureLoader} from 'three';
 import * as THREE from 'three';
+import {GlobalContext} from "../../context/GlobalStateContext.jsx";
+import firefliesVertexShader from "./fireflies/vertex.glsl";
+import firefliesFragmentShader from "./fireflies/fireflies.glsl";
+
+console.log(firefliesFragmentShader);
+console.log(firefliesVertexShader);
 
 const Model = () => {
     const ref = useRef();
@@ -9,6 +15,7 @@ const Model = () => {
     const normalMap = useLoader(TextureLoader, 'src/assets/img/textures/moon_normalr.jpg');
 
     const {camera} = useThree();
+
     useEffect(() => {
         // Cambiar la posición de la cámara
         camera.position.set(-2, 0, 5);
@@ -21,14 +28,29 @@ const Model = () => {
     return (
         <mesh ref={ref}>
             <sphereBufferGeometry args={[2, 80, 80]}/>
-            <meshStandardMaterial map={moonTexture} normalMap={normalMap}/>
+            <meshStandardMaterial map={moonTexture} normalMap={normalMap} color={"#a2a2a2"}/>
         </mesh>
     );
 };
 
 const Stars = () => {
     const groupRef = useRef();
-    // const [varWhite, setVarWhite] = useState('white');
+    const {theme, setTheme, language, setLanguage} = useContext(GlobalContext);
+    const [material, setMaterial] = useState(new THREE.ShaderMaterial({
+        depthWrite: false,
+        uniforms:{
+            uPixelRatio: { value: Math.min(window.devicePixelRatio, 2)},
+            uSize: {value: 800},
+            cRed: {value: 1.0},
+            cGreen: {value: 1.0},
+            cBlue: {value: 1.0},
+            aScale: {value: 2.0}
+        },
+        vertexShader: firefliesVertexShader,
+        fragmentShader: firefliesFragmentShader,
+        transparent: true,
+        blending: THREE.AdditiveBlending,
+    }))
 
     // Crea una geometría para las estrellas
     const geometry = new THREE.BufferGeometry();
@@ -44,47 +66,47 @@ const Stars = () => {
 
     geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
 
-    // useEffect(() => {
-    //     // Función para actualizar el color del material
-    //     const updateMaterialColor = () => {
-    //         material.color.set("white");
-    //     };
-    //
-    //     // Observa los cambios en la variable varWhite y actualiza el color del material
-    //     const observer = new MutationObserver(updateMaterialColor);
-    //     observer.observe(document.documentElement, { attributes: true });
-    //
-    //     return () => {
-    //         observer.disconnect();
-    //     };
-    // }, [varWhite]);
-
     useFrame(() => {
         // Hace que las estrellas roten ligeramente en cada frame
         groupRef.current.rotation.y += 0.001;
     });
-    //
-    // useEffect(() => {
-    //     // Función para actualizar la variable varWhite en base al valor de la variable CSS "--white"
-    //     const handleCSSVariableChange = () => {
-    //         const cssWhiteValue = getComputedStyle(document.documentElement).getPropertyValue('--white').trim();
-    //         setVarWhite(cssWhiteValue);
-    //     };
-    //
-    //     // Observa los cambios en la variable CSS "--white" y actualiza varWhite
-    //     const observer = new MutationObserver(handleCSSVariableChange);
-    //     observer.observe(document.documentElement, { attributes: true });
-    //
-    //     // Actualiza varWhite con el valor inicial de la variable CSS "--white"
-    //     handleCSSVariableChange();
-    //
-    //     return () => {
-    //         observer.disconnect();
-    //     };
-    // }, []);
 
-    // Crea un material para las estrellas
-    const material = new THREE.PointsMaterial({ color: "white" });
+    useEffect(()=> {
+        if(theme === "dark"){
+            setMaterial(new THREE.ShaderMaterial({
+                depthWrite: false,
+                uniforms:{
+                    uPixelRatio: { value: Math.min(window.devicePixelRatio, 2)},
+                    uSize: {value: 800},
+                    cRed: {value: 1.0},
+                    cGreen: {value: 1.0},
+                    cBlue: {value: 1.0},
+                    aScale: {value: 2.0}
+                },
+                vertexShader: firefliesVertexShader,
+                fragmentShader: firefliesFragmentShader,
+                transparent: true,
+                blending: THREE.AdditiveBlending
+            }));
+        }
+        if(theme === "light"){
+            setMaterial(new THREE.ShaderMaterial({
+                depthWrite: false,
+                uniforms:{
+                    uPixelRatio: { value: Math.min(window.devicePixelRatio, 2)},
+                    uSize: {value: 900},
+                    cRed: {value: 0},
+                    cGreen: {value: 0},
+                    cBlue: {value: 0},
+                    aScale: {value: 6.0}
+                },
+                vertexShader: firefliesVertexShader,
+                fragmentShader: firefliesFragmentShader,
+                transparent: true,
+                blending: THREE.AdditiveBlending
+            }));
+        }
+    }, [theme])
 
     return (
         <group ref={groupRef}>
@@ -96,6 +118,7 @@ const Stars = () => {
 
 
 const Model3D = () => {
+
 
     return (
         <Canvas>
