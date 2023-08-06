@@ -5,14 +5,16 @@ import * as THREE from 'three';
 import {GlobalContext} from "../../context/GlobalStateContext.jsx";
 import firefliesVertexShader from "./fireflies/vertex.glsl";
 import firefliesFragmentShader from "./fireflies/fireflies.glsl";
+import moonTexture2 from "../../assets/img/textures/moonr.jpg";
+import moonNormal from "../../assets/img/textures/moon_normalr.jpg";
 
 console.log(firefliesFragmentShader);
 console.log(firefliesVertexShader);
 
 const Model = () => {
     const ref = useRef();
-    const moonTexture = useLoader(TextureLoader, 'src/assets/img/textures/moonr.jpg');
-    const normalMap = useLoader(TextureLoader, 'src/assets/img/textures/moon_normalr.jpg');
+    const moonTexture = useLoader(TextureLoader, moonTexture2);
+    const normalMap = useLoader(TextureLoader, moonNormal);
 
     const {camera} = useThree();
 
