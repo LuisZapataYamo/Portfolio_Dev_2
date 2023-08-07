@@ -8,17 +8,26 @@ import firefliesFragmentShader from "./fireflies/fireflies.glsl";
 import moonTexture2 from "../../assets/img/textures/moonr.jpg";
 import moonNormal from "../../assets/img/textures/moon_normalr.jpg";
 
-const Model = () => {
+const Model = ({ width }) => {
     const ref = useRef();
     const moonTexture = useLoader(TextureLoader, moonTexture2);
     const normalMap = useLoader(TextureLoader, moonNormal);
 
-    const {camera} = useThree();
+    const {camera, size} = useThree();
 
     useEffect(() => {
         // Cambiar la posición de la cámara
-        camera.position.set(-2, 0, 5);
-    }, []);
+        console.log(width)
+        if (width > 1680){
+            camera.position.set(-2, 0, 5);
+            ref.current.geometry = new THREE.SphereBufferGeometry(2, 80, 80);
+        }
+        if (width <= 1680){
+            camera.position.set(-2.5, 0.2, 5);
+            ref.current.geometry = new THREE.SphereBufferGeometry(2, 40, 40);
+        }
+
+    },  [size.width, size.height]);
 
     useFrame(() => {
         ref.current.rotation.y += 0.001; // Incrementa el ángulo de rotación en cada frame
@@ -117,14 +126,27 @@ const Stars = () => {
 
 
 const Model3D = () => {
+    const [screenSize, setScreenSize] = useState({ width: window.innerWidth, height: window.innerHeight });
+    console.log(screenSize.width)
+    // Actualiza el estado del tamaño de la pantalla cuando cambie
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenSize({ width: window.innerWidth, height: window.innerHeight });
+        };
 
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <Canvas>
             <ambientLight intensity={1.2} color="#ffffff"/>
             <directionalLight intensity={1} position={[-20, -10, 10]} color="white"/>
-            <Model/>
-            <Stars/>
+            <Model screenSize={screenSize} width={screenSize.width}/>
+            <Stars screenSize={screenSize}/>
         </Canvas>
     );
 };
