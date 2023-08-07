@@ -41,7 +41,7 @@ const Home = () => {
                     <li><DevtoIcon/></li>
                     <li><GithubIcon/></li>
                     <li><LinkedinIcon/></li>
-                    <li className="download"><Button text={dataHome.download[language]} w="100%" h="100%" icon={<DownloadIcon />} to="/CV_LuisZapataYamo.pdf" linkOutside={true}/></li>
+                    <li className="download"><Button text={dataHome.download[language]} w="100%" h="100%" icon={<DownloadIcon />} to="./CV_LuisZapataYamo.pdf" linkOutside={true}/></li>
                 </ul>
             </div>
             <div className="model-3d">
