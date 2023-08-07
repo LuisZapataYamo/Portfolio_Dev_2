@@ -121,3 +121,11 @@ header div.container span.language {
     text-align: center;
     font-weight: 700;
 }
+
+/* Media query's*/
+
+@media screen and (max-width: 1680px) {
+    header{
+        padding: 0 5rem;
+    }
+}

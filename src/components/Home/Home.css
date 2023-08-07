@@ -25,7 +25,7 @@ div.main-container div.home {
 }
 
 div.main-container div.home div.content {
-    margin-top: 26.5rem;
+    margin-top: 23rem;
     width: 54.5rem;
     margin-left: 5.7rem;
 }
@@ -39,11 +39,11 @@ div.main-container div.home div.content span.hi {
     flex-direction: column;
 }
 
-div.main-container.dark div.home div.content span.hi{
+div.main-container.dark div.home div.content span.hi {
     color: var(--white);
 }
 
-div.main-container.light div.home div.content span.hi{
+div.main-container.light div.home div.content span.hi {
     color: var(--black);
 }
 
@@ -62,11 +62,11 @@ div.main-container div.home div.content div.name span.text {
     color: var(--yellow);
 }
 
-div.main-container.dark div.home div.content div.name span.text{
+div.main-container.dark div.home div.content div.name span.text {
     color: var(--yellow);
 }
 
-div.main-container.light div.home div.content div.name span.text{
+div.main-container.light div.home div.content div.name span.text {
     color: var(--black);
 }
 
@@ -103,27 +103,27 @@ div.main-container div.home div.content ul.links-cv {
     margin-top: 2rem;
 }
 
-div.main-container div.home div.content ul.links-cv li{
+div.main-container div.home div.content ul.links-cv li {
     height: 3rem;
 }
 
-div.main-container.dark div.home div.content ul.links-cv li:not(.download) svg path{
+div.main-container.dark div.home div.content ul.links-cv li:not(.download) svg path {
     fill: var(--white);
     transition: fill 1s;
 }
 
-div.main-container.light div.home div.content ul.links-cv li:not(.download) svg path{
+div.main-container.light div.home div.content ul.links-cv li:not(.download) svg path {
     fill: var(--black);
     transition: fill 1s;
 }
 
-div.main-container div.home div.content ul.links-cv li.download{
+div.main-container div.home div.content ul.links-cv li.download {
     height: 4rem;
     width: 15rem;
 }
 
 
-div.main-container div.home div.model-3d{
+div.main-container div.home div.model-3d {
     position: absolute;
     top: 0;
     left: 0;
@@ -134,17 +134,50 @@ div.main-container div.home div.model-3d{
     z-index: -3;
 }
 
-div.main-container.dark div.home div.model-3d{
+div.main-container.dark div.home div.model-3d {
     background-color: var(--black);
     transition: background-color 1s;
 }
 
-div.main-container.light div.home div.model-3d{
+div.main-container.light div.home div.model-3d {
     background-color: var(--white);
     transition: background-color 1s;
 }
 
-div.main-container div.home div.model-3d .content{
+div.main-container div.home div.model-3d .content {
     width: 100%;
     height: 100%;
+}
+
+/* Media query's*/
+
+@media screen and (max-width: 1680px) {
+    div.main-container {
+        padding: 8rem 23rem 0 10rem;
+    }
+
+    div.main-container div.home div.content {
+        margin-top: 17vh;
+    }
+
+    div.main-container div.home div.content span.hi {
+        font-size: 2.5rem;
+    }
+
+    div.main-container div.home div.content div.name span.text {
+        font-size: 7rem;
+    }
+    div.main-container div.home div.content div.name svg.icon {
+        top: 3rem;
+    }
+
+    div.main-container div.home div.content div.name svg.icon-right {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    div.main-container {
+        padding: 8rem 23rem 0 3rem;
+    }
 }
