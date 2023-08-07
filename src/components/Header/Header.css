@@ -13,12 +13,14 @@ header.dark {
     border-bottom: 1px solid var(--white);
     background-color: var(--black);
     color: var(--white);
+    transition: background-color 1s;
 }
 
 header.light {
     border-bottom: 1px solid var(--black);
     background-color: var(--white);
     color: var(--black);
+    transition: background-color 1s;
 }
 
 header div.container {

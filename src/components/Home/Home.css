@@ -94,6 +94,35 @@ div.main-container div.home div.content p.enjoy {
     margin-top: 3rem;
 }
 
+div.main-container div.home div.content ul.links-cv {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 45rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+div.main-container div.home div.content ul.links-cv li{
+    height: 3rem;
+}
+
+div.main-container.dark div.home div.content ul.links-cv li:not(.download) svg path{
+    fill: var(--white);
+    transition: fill 1s;
+}
+
+div.main-container.light div.home div.content ul.links-cv li:not(.download) svg path{
+    fill: var(--black);
+    transition: fill 1s;
+}
+
+div.main-container div.home div.content ul.links-cv li.download{
+    height: 4rem;
+    width: 15rem;
+}
+
+
 div.main-container div.home div.model-3d{
     position: absolute;
     top: 0;
