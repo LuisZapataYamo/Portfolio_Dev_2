@@ -36,11 +36,11 @@ const Home = () => {
                 </p>
                 <p className="enjoy">{dataHome.enjoy[language]}</p>
                 <ul className="links-cv">
-                    <li><TwitterIcon/></li>
-                    <li><CodewarsIcon/></li>
-                    <li><DevtoIcon/></li>
-                    <li><GithubIcon/></li>
-                    <li><LinkedinIcon/></li>
+                    <li><a href="https://twitter.com/LuisZapataYamo" rel="noreferrer" target="_blank"><TwitterIcon/></a></li>
+                    <li><a href="https://www.codewars.com/users/LuisZapataYamo" rel="noreferrer" target="_blank"><CodewarsIcon/></a></li>
+                    <li><a href="https://dev.to/luiszapatayamo" rel="noreferrer" target="_blank"><DevtoIcon/></a></li>
+                    <li><a href="https://github.com/LuisZapataYamo" rel="noreferrer" target="_blank"><GithubIcon/></a></li>
+                    <li><a href="https://www.linkedin.com/in/luiszapatayamo/" rel="noreferrer" target="_blank"><LinkedinIcon/></a></li>
                     <li className="download"><Button text={dataHome.download[language]} w="100%" h="100%" icon={<DownloadIcon />} to="./CV_LuisZapataYamo.pdf" linkOutside={true}/></li>
                 </ul>
             </div>

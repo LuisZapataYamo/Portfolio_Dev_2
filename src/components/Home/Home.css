@@ -33,7 +33,6 @@ div.main-container div.home div.content {
 div.main-container div.home div.content span.hi {
     font-size: 3rem;
     font-style: italic;
-    font-weight: 400;
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -87,7 +86,6 @@ div.main-container div.home div.content div.name svg.icon-right {
 div.main-container div.home div.content p {
     font-size: 2rem;
     font-style: italic;
-    font-weight: 400;
 }
 
 div.main-container div.home div.content p.enjoy {
@@ -112,16 +110,23 @@ div.main-container.dark div.home div.content ul.links-cv li:not(.download) svg p
     transition: fill 1s;
 }
 
+div.main-container.dark div.home div.content ul.links-cv li:not(.download):hover svg path{
+    fill: var(--blue);
+}
+
 div.main-container.light div.home div.content ul.links-cv li:not(.download) svg path {
     fill: var(--black);
     transition: fill 1s;
+}
+
+div.main-container.light div.home div.content ul.links-cv li:not(.download):hover svg path{
+    fill: var(--green);
 }
 
 div.main-container div.home div.content ul.links-cv li.download {
     height: 4rem;
     width: 15rem;
 }
-
 
 div.main-container div.home div.model-3d {
     position: absolute;
