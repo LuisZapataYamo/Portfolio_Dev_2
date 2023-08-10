@@ -8,6 +8,7 @@ import Button from "../utils/Button/Button";
 import {useContext, useEffect} from "react";
 import {GlobalContext} from "../../context/GlobalStateContext.jsx";
 import commons from "../../utils/locales/common.json";
+import {Link} from "react-router-dom";
 
 const Header = () => {
     const {theme, setTheme, language, setLanguage} = useContext(GlobalContext);
@@ -32,10 +33,10 @@ const Header = () => {
 
             <nav className="navbar">
                 <ul>
-                    <li className="inav">{dataHeader.home[language]}</li>
-                    <li className="inav">{dataHeader.about[language]}</li>
-                    <li className="inav">{dataHeader.skills[language]}</li>
-                    <li className="inav">{dataHeader.experience[language]}</li>
+                    <li className="inav"><Link className="links" to="/" >{dataHeader.home[language]}</Link></li>
+                    <li className="inav"><Link className="links" to="/about/" >{dataHeader.about[language]}</Link></li>
+                    <li className="inav"><Link className="links" to="/skills/" >{dataHeader.skills[language]}</Link></li>
+                    <li className="inav"><Link className="links" to="/experience/" >{dataHeader.experience[language]}</Link></li>
                     <li><Button to='/blog/' text={`${dataHeader.blog[language]}`} c="inav" w="12rem" h="3.5rem"/></li>
                     <li><Button to="/learning/" text={`${dataHeader.learning[language]}`} c="inav" w="12rem" h="3.5rem"/></li>
                 </ul>

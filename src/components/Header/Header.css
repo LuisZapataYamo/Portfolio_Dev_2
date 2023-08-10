@@ -34,13 +34,24 @@ header div.container {
 header div.container svg.logo-icon {
     width: 14.8rem;
 }
+header div.container svg.logo-icon path.ray{
+    transition: filter 0.5s;
+}
 
-header.dark div.container svg.logo-icon path:first-child {
-    fill: aqua;
+header.dark div.container svg.logo-icon path.ray {
+    fill: var(--blue);
+}
+
+header.dark div.container svg.logo-icon:hover path.ray{
+    filter: drop-shadow(0px 1px 3px var(--blue));
 }
 
 header.light div.container svg.logo-icon > path {
     fill: var(--black);
+}
+
+header.light div.container svg.logo-icon:hover path.ray{
+    filter: drop-shadow(0px 1px 3px var(--black));
 }
 
 
@@ -60,11 +71,24 @@ header div.container nav.navbar ul {
 
 header div.container nav.navbar ul li {
     width: auto;
-    height: fit-content;
     font-weight: 600;
     font-size: 1.4rem;
     text-align: center;
     white-space: nowrap;
+}
+
+header div.container nav.navbar ul li.inav{
+    height: 2rem;
+    text-decoration: none;
+
+}
+
+header.dark div.container nav.navbar ul li.inav .links{
+    color: var(--white);
+}
+
+header.light div.container nav.navbar ul li.inav .links{
+    color: var(--black);
 }
 
 header.dark div.container nav.navbar ul li.inav::after {
@@ -74,6 +98,7 @@ header.dark div.container nav.navbar ul li.inav::after {
     height: 2px;
     background-color: var(--purple);
     transition: width 1s;
+    bottom: 0;
 }
 
 header.dark div.container nav.navbar ul li.inav:hover::after {
@@ -119,7 +144,7 @@ header div.container span.language {
     width: 50%;
     font-size: 1.4rem;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* Media query's*/
