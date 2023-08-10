@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Poppins'; /* Puedes darle el nombre que desees */
-  src: url('/Poppins-Regular.ttf') format('truetype');
+  src: url("/Poppins-Regular.ttf") format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins'; /* Puedes darle el nombre que desees */
-  src: url('/Poppins-Italic.ttf') format('truetype');
+  src: url("/Poppins-Italic.ttf") format('truetype');
   font-weight: 400;
   font-style: italic;
 }
@@ -15,14 +15,14 @@
 
 @font-face {
   font-family: 'Poppins'; /* Puedes darle el nombre que desees */
-  src: url('/Poppins-SemiBold.ttf') format('truetype');
+  src: url("/Poppins-SemiBold.ttf") format('truetype');
   font-weight: 600; /* Peso de la fuente Semibold */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins'; /* Puedes darle el nombre que desees */
-  src: url('/Poppins-SemiBoldItalic.ttf') format('truetype');
+  src: url("/Poppins-SemiBoldItalic.ttf") format('truetype');
   font-weight: 600; /* Peso de la fuente Semibold */
   font-style: italic;
 }
