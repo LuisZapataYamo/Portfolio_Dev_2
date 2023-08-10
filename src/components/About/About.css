@@ -6,7 +6,7 @@ div.container-about {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 5rem;
     transition: background-color 1s;
 }
 
@@ -137,4 +137,10 @@ div.container-about div.perfil img{
     right: 19rem;
     bottom: -4rem;
     z-index: 0;
+}
+
+@media screen and (max-width: 1680px) {
+    div.container-about {
+        padding: 8rem 10rem 0 10rem;
+    }
 }
