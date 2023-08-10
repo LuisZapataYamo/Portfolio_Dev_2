@@ -1,10 +1,41 @@
-/*https://huemint.com/website-3/#palette=d9d9d9-00b5e5-2d2f2e-89d20c-183a3b-a397ec*/
+@font-face {
+  font-family: 'Poppins'; /* Puedes darle el nombre que desees */
+  src: url('/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins'; /* Puedes darle el nombre que desees */
+  src: url('/Poppins-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Poppins'; /* Puedes darle el nombre que desees */
+  src: url('/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600; /* Peso de la fuente Semibold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins'; /* Puedes darle el nombre que desees */
+  src: url('/Poppins-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600; /* Peso de la fuente Semibold */
+  font-style: italic;
+}
+
+
+html{
+  font-size: 62.5%;
+}
 
 * {
   text-decoration: none;
   margin: 0;
   padding: 0;
-  font-size: 62.5%;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
@@ -15,11 +46,11 @@
   font-weight: 400;
   --black: #2D2F2E;
   --yellow: #FCF8A1;
-  --purple: #A397EC;
-  --green: #89D20C;
-  --blue: #00b5e5;
+  --purple: #8d80d9;
+  --green: #71ad0e;
+  --blue: #00FFFFFF;
   --black-hard: #183a3b;
-  --white: #D9D9D9;
+  --white: #d9d9d9;
   color-scheme: dark;
   color: var(--white);
   font-synthesis: none;
