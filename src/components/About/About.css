@@ -134,13 +134,31 @@ div.container-about.light div.perfil figure.software svg path{
 
 div.container-about div.perfil img{
     position: absolute;
-    right: 19rem;
-    bottom: -4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 0;
 }
 
 @media screen and (max-width: 1680px) {
     div.container-about {
         padding: 8rem 10rem 0 10rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    div.container-about div.perfil{
+        width: 50rem;
+    }
+    div.container-about div.perfil img{
+        height: 35rem;
+    }
+    div.container-about div.perfil figure.quality svg,
+    div.container-about div.perfil figure.software svg{
+        height: 5rem;
+    }
+
+    div.container-about div.content h1{
+        font-size: 5rem;
     }
 }
