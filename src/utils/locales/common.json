@@ -66,13 +66,25 @@
       "EN": "Skills",
       "ES": "Habilidades"
     },
-    "others": {
-      "EN": "Others",
-      "ES": "Otros"
+    "frontend": {
+      "EN": "Frontend",
+      "ES": "Frontend"
     },
-    "skills": {
-      "EN": "Skills/Tools",
-      "ES": "Habilidades/Herramientas"
+    "backend": {
+      "EN": "Backend",
+      "ES": "Backend"
+    },
+    "database": {
+      "EN": "Database",
+      "ES": "Base de Datos"
+    },
+    "tools": {
+      "EN": "Tools/Platforms",
+      "ES": "Herramientas/Plataformas"
+    },
+    "data": {
+      "EN": "Data processing",
+      "ES": "Procesamiento de datos"
     }
   },
   "experience": {
