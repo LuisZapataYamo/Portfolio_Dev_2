@@ -25,9 +25,13 @@ div.main-container div.home {
 }
 
 div.main-container div.home div.content {
-    margin-top: 23rem;
     width: 54.5rem;
     margin-left: 5.7rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 div.main-container div.home div.content span.hi {
@@ -99,6 +103,7 @@ div.main-container div.home div.content ul.links-cv {
     max-width: 45rem;
     align-items: center;
     margin-top: 2rem;
+    gap: 2rem;
 }
 
 div.main-container div.home div.content ul.links-cv li {
@@ -162,7 +167,7 @@ div.main-container div.home div.model-3d .content {
     }
 
     div.main-container div.home div.content {
-        margin-top: 17vh;
+        /*margin-top: 17vh;*/
     }
 
     div.main-container div.home div.content span.hi {
