@@ -37,7 +37,7 @@ div.container-about.dark div.content h1 {
 }
 
 div.container-about.light div.content h1 {
-    color: var(--purple);
+    color: var(--black);
 }
 
 div.container-about div.content p {
