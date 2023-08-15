@@ -80,7 +80,6 @@ header div.container nav.navbar ul li {
 header div.container nav.navbar ul li.inav{
     height: 2rem;
     text-decoration: none;
-
 }
 
 header.dark div.container nav.navbar ul li.inav .links{
