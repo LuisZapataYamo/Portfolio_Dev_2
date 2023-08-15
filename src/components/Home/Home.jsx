@@ -1,14 +1,14 @@
 import "./Home.css"
 import commons from "../../utils/locales/common.json";
 
-import {ReactComponent as GreaterIcon} from "../../assets/img/icons/greater-icon.svg";
-import {ReactComponent as LessIcon} from "../../assets/img/icons/less-icon.svg";
-import {ReactComponent as TwitterIcon} from "../../assets/img/icons/twitter-icon.svg";
-import {ReactComponent as GithubIcon} from "../../assets/img/icons/github-icon.svg";
-import {ReactComponent as LinkedinIcon} from "../../assets/img/icons/linkedin-icon.svg";
-import {ReactComponent as CodewarsIcon} from "../../assets/img/icons/codewars-icon.svg";
-import {ReactComponent as DevtoIcon} from "../../assets/img/icons/devto-icon.svg";
-import {ReactComponent as DownloadIcon} from "../../assets/img/icons/download-icon.svg";
+import {ReactComponent as GreaterIcon} from "../../assets/img/icons/svg/greater-icon.svg";
+import {ReactComponent as LessIcon} from "../../assets/img/icons/svg/less-icon.svg";
+import {ReactComponent as TwitterIcon} from "../../assets/img/icons/svg/twitter-icon.svg";
+import {ReactComponent as GithubIcon} from "../../assets/img/icons/svg/github-icon.svg";
+import {ReactComponent as LinkedinIcon} from "../../assets/img/icons/svg/linkedin-icon.svg";
+import {ReactComponent as CodewarsIcon} from "../../assets/img/icons/svg/codewars-icon.svg";
+import {ReactComponent as DevtoIcon} from "../../assets/img/icons/svg/devto-icon.svg";
+import {ReactComponent as DownloadIcon} from "../../assets/img/icons/svg/download-icon.svg";
 
 import Model3D from "../Model3D/Model3D.jsx";
 import {useContext} from "react";

@@ -1,8 +1,8 @@
 import "./Header.css"
 
 import {ReactComponent as LogoIcon} from "../../assets/img/logo.svg";
-import {ReactComponent as SunIcon} from "../../assets/img/icons/sun-icon.svg";
-import {ReactComponent as MoonIcon} from "../../assets/img/icons/moon-icon.svg";
+import {ReactComponent as SunIcon} from "../../assets/img/icons/svg/sun-icon.svg";
+import {ReactComponent as MoonIcon} from "../../assets/img/icons/svg/moon-icon.svg";
 
 import Button from "../utils/Button/Button";
 import {useContext, useEffect} from "react";
