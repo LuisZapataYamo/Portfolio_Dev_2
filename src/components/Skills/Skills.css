@@ -112,7 +112,7 @@ div.container-skills > div.technologics > div > ul > li.github:hover > img{
     filter: grayscale(0) invert(1);
 }
 
-div.container-skills.light > div.technologics > div > ul > li.github:hover > img{
+div.container-skills> div.technologics > div > ul > li.github:hover > img{
     filter: grayscale(0) invert(0);
 }
 
