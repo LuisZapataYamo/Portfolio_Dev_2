@@ -17,7 +17,6 @@ const Model = ({ width }) => {
 
     useEffect(() => {
         // Cambiar la posición de la cámara
-        console.log(width)
         if (width > 1680){
             camera.position.set(-2, 0, 5);
             ref.current.geometry = new THREE.SphereBufferGeometry(2, 80, 80);
@@ -127,7 +126,6 @@ const Stars = () => {
 
 const Model3D = () => {
     const [screenSize, setScreenSize] = useState({ width: window.innerWidth, height: window.innerHeight });
-    console.log(screenSize.width)
     // Actualiza el estado del tamaño de la pantalla cuando cambie
     useEffect(() => {
         const handleResize = () => {
