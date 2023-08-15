@@ -96,24 +96,24 @@ div.container-skills.dark > div.technologics > div > ul > li > img{
     filter: grayscale(1) invert(0);
 }
 
-div.container-skills> div.technologics > div > ul > li.github > img{
-    filter: grayscale(1) invert(1);
-}
-
 div.container-skills.light > div.technologics > div > ul > li > img{
     filter: grayscale(1) invert(1);
 }
 
-div.container-skills > div.technologics > div > ul > li:hover:not(.github) > img{
-    filter: grayscale(0) invert(0);
+div.container-skills.dark > div.technologics > div > ul > li.github > img {
+    filter: invert(1);
 }
 
-div.container-skills > div.technologics > div > ul > li.github:hover > img{
-    filter: grayscale(0) invert(1);
+div.container-skills.light > div.technologics > div > ul > li.github > img {
+    filter: invert(0);
 }
 
-div.container-skills> div.technologics > div > ul > li.github:hover > img{
-    filter: grayscale(0) invert(0);
+div.container-skills.dark > div.technologics > div > ul > li.github:hover > img{
+    filter: invert(0);
+}
+
+div.container-skills.light > div.technologics > div > ul > li.github:hover > img{
+    filter: invert(1);
 }
 
 div.container-skills > div.technologics > div > ul > li::after {
