@@ -88,30 +88,48 @@
     }
   },
   "experience": {
-    "title": {
-      "EN": "Experience",
-      "ES": "Experiencia"
-    },
-    "valhalla": {
-      "enterprise": "Valhalla",
-      "link": "https://valhalla.com.pe/",
-      "subtitle": {
-        "EN": "Back-End Developer / Technical Support",
-        "ES": "Desarrollador Back-End / Soporte Técnico"
-      },
-      "time": {
-        "EN": "Sept. 2022 - present",
-        "ES": "Sept. 2022 - presente"
-      },
-      "description": {
-        "EN": "Development and maintenance of the back-end of the Valhalla project. Technical support of websites using WordPress and Shopify.",
-        "ES": "Desarrollo y mantenimiento del back-end del proyecto Valhalla. Soporte técnico de sitios web utilizando WordPress y Shopify."
+    "general": {
+      "title": {
+        "EN": "Experience",
+        "ES": "Experiencia"
       },
       "skills": {
         "EN": "Skills",
         "ES": "Habilidades"
       }
-    }
+    },
+    "jobs": [
+      {
+        "enterprise": "Valhalla",
+        "link": "https://valhalla.com.pe/",
+        "job_title": {
+          "EN": "Back-End Developer / Technical Support",
+          "ES": "Desarrollador Back-End / Soporte Técnico"
+        },
+        "init_time": {
+          "EN": "Sept. 2022",
+          "ES": "Sept. 2022"
+        },
+        "last_time": {
+          "EN": "Present",
+          "ES": "Presente"
+        },
+        "description": {
+          "EN": "Development and maintenance of the back-end of the Valhalla project. Technical support of websites using WordPress and Shopify.",
+          "ES": "Desarrollo y mantenimiento del back-end del proyecto Valhalla. Soporte técnico de sitios web utilizando WordPress y Shopify."
+        },
+        "skills": [
+          "Python",
+          "Django",
+          "Django RESTFramework",
+          "Celery",
+          "PostgresSQL",
+          "WordPress",
+          "Shopify",
+          "AWS"
+        ]
+      }
+    ]
   }
 }
 
