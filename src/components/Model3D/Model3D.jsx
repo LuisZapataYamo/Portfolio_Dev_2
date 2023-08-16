@@ -19,11 +19,11 @@ const Model = ({ width }) => {
         // Cambiar la posición de la cámara
         if (width > 1680){
             camera.position.set(-2, 0, 5);
-            ref.current.geometry = new THREE.SphereBufferGeometry(2, 80, 80);
+            ref.current.geometry = new THREE.SphereGeometry(2, 80, 80);
         }
         if (width <= 1680){
             camera.position.set(-2.5, 0.2, 5);
-            ref.current.geometry = new THREE.SphereBufferGeometry(2, 40, 40);
+            ref.current.geometry = new THREE.SphereGeometry(2, 40, 40);
         }
 
     },  [size.width, size.height]);
@@ -34,7 +34,7 @@ const Model = ({ width }) => {
 
     return (
         <mesh ref={ref}>
-            <sphereBufferGeometry args={[2, 80, 80]}/>
+            <sphereGeometry args={[2, 80, 80]}/>
             <meshStandardMaterial map={moonTexture} normalMap={normalMap} color={"#a2a2a2"}/>
         </mesh>
     );
