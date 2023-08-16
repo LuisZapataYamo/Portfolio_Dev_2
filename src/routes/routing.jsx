@@ -4,6 +4,7 @@ import Home from "../components/Home/Home.jsx";
 import GlobalStateContext from "../context/GlobalStateContext.jsx";
 import Skills from "../components/Skills/Skills.jsx";
 import About from "../components/About/About.jsx";
+import Experience from "../components/Experience/Experience.jsx";
 
 const Routing = () => {
     return (
@@ -15,6 +16,7 @@ const Routing = () => {
                             <Route index element={<Home/>}/>
                             <Route path='/about/' element={<About/>} />
                             <Route path='/skills/' element={<Skills/>} />
+                            <Route path='/experience/' element={<Experience/>} />
                         </Route>
 
 
