@@ -31,8 +31,8 @@
       "ES": "Hola, soy"
     },
     "description": {
-      "EN": "I am a full stack developer and soon to be data scientist.",
-      "ES": "Soy un desarrollador full stack y pronto seré un científico de datos."
+      "EN": "I am a full-stack developer and soon to be data scientist.",
+      "ES": "Soy un desarrollador full-stack y pronto seré un científico de datos."
     },
     "enjoy": {
       "EN": "Enjoy your trip!",
@@ -49,8 +49,8 @@
       "ES": "Sobre mí"
     },
     "description": {
-      "EN": "I am a systems engineering student and software developer with experience in combining technologies to create high-quality, high-performance applications. My focus is on utilizing my technical knowledge to design innovative solutions that provide an excellent user experience and improve efficiency.",
-      "ES": "Soy un estudiante de ingeniería de sistemas y desarrollador de software con experiencia en combinar tecnologías para crear aplicaciones de alta calidad y alto rendimiento. Mi enfoque está en utilizar mis conocimientos técnicos para diseñar soluciones innovadoras que brinden una excelente experiencia de usuario y mejoren la eficiencia."
+      "EN": "As a full-stack software developer and upcoming systems engineer, I stand out for my problem-solving ability through the integration of technologies. My expertise lies in merging technologies to create high-performance applications. I focus my experience on designing innovative solutions that optimize efficiency and provide an exceptional user experience. My professional and collaborative approach ensures superior results.",
+      "ES": "Como desarrollador de software full stack y próximo ingeniero de sistemas, destaco por mi habilidad en la resolución de problemas mediante la combinación de tecnologías. Mi destreza radica en fusionar tecnologías para crear aplicaciones de alto rendimiento. Enfoco mi experiencia en diseñar soluciones innovadoras que optimizan la eficiencia y brindan una experiencia de usuario excepcional. Mi enfoque profesional y colaborativo garantiza resultados superiores."
     },
     "email": {
       "EN": "Email",
@@ -96,6 +96,10 @@
       "skills": {
         "EN": "Skills",
         "ES": "Habilidades"
+      },
+      "in": {
+        "EN": "in",
+        "ES": "en"
       }
     },
     "jobs": [
@@ -119,14 +123,14 @@
           "ES": "Desarrollo y mantenimiento del back-end del proyecto Valhalla. Soporte técnico de sitios web utilizando WordPress y Shopify."
         },
         "skills": [
+          "AWS",
           "Python",
           "Django",
           "Django RESTFramework",
           "Celery",
           "PostgresSQL",
           "WordPress",
-          "Shopify",
-          "AWS"
+          "Shopify"
         ]
       }
     ]
