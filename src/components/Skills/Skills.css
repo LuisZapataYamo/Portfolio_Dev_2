@@ -61,7 +61,7 @@ div.container-skills.dark > div.technologics > div > h2.title {
 }
 
 div.container-skills.light > div.technologics > div > h2.title {
-    color: var(--purple);
+    color: var(--green);
 }
 
 div.container-skills > div.technologics > div > ul {
@@ -80,7 +80,7 @@ div.container-skills.dark > div.technologics > div > ul {
 }
 
 div.container-skills.light > div.technologics > div > ul {
-    border: solid 2px var(--green);
+    border: solid 2px var(--purple);
 }
 
 div.container-skills > div.technologics > div > ul > li {
