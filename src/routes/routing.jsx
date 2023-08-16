@@ -5,6 +5,8 @@ import GlobalStateContext from "../context/GlobalStateContext.jsx";
 import Skills from "../components/Skills/Skills.jsx";
 import About from "../components/About/About.jsx";
 import Experience from "../components/Experience/Experience.jsx";
+import Blog from "../components/Blog/Blog.jsx";
+import Learning from "../components/Learning/Learning.jsx";
 
 const Routing = () => {
     return (
@@ -17,6 +19,8 @@ const Routing = () => {
                             <Route path='/about/' element={<About/>} />
                             <Route path='/skills/' element={<Skills/>} />
                             <Route path='/experience/' element={<Experience/>} />
+                            <Route path="/blog/" element={<Blog/>}/>
+                            <Route path="/learning/" element={<Learning/>}/>
                         </Route>
 
 
