@@ -13,13 +13,11 @@ div.container-about {
 div.container-about.dark {
     color: var(--white);
     background-color: var(--black);
-    /*background: radial-gradient(circle, var(--black), var(--black) 50%, var(--blue) 260%);*/
 }
 
 div.container-about.light {
     color: var(--black);
     background-color: var(--white);
-    /*background: radial-gradient(circle, var(--white), var(--white) 50%, var(--black) 100%);*/
 }
 
 div.container-about div.content {
