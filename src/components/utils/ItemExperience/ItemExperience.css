@@ -128,7 +128,9 @@ div.job > div.content-job > div.skills > ul.list{
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 1.2rem;
     font-weight: normal;
 }
