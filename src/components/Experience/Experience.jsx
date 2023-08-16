@@ -14,10 +14,12 @@ const Experience = () => {
             {experience.jobs.map((job, index) => (
                 <ItemExperience
                     enterprise={job.enterprise}
+                    titleJob={job.job_title[language]}
                     initTime={job.init_time[language]}
                     lastTime={job.last_time[language]}
                     description={job.description[language]}
                     listSkills={job.skills}
+                    linkEnterprise={job.link}
                     key={index}
                 />
             ))}

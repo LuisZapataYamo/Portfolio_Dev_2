@@ -3,9 +3,7 @@ div.container-experience {
     width: 100vw;
     padding: 8rem 23rem 0 23rem;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     gap: 5rem;
     transition: background-color 1s;
 }
@@ -16,4 +14,27 @@ div.container-experience.dark {
 
 div.container-experience.light {
     background-color: var(--white);
+}
+
+div.container-experience > h1.title{
+    width: 100%;
+    padding: 5rem 1rem 1rem;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+div.container-experience.dark > h1.title{
+    color: var(--blue);
+}
+
+div.container-experience.light > h1.title{
+    color: var(--black);
+}
+
+div.container-experience > div.list-experience{
+    width: 100%;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
 }
